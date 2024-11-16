@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to right, #111827, #1f2937, #000000);
+  color: #fff;
+}
+
+#TaskList2::-webkit-scrollbar {
+  display: none;
+}
+
+#AllTask::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
